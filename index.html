@@ -20,28 +20,39 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" href="images/favicon/favicon.ico">
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700" rel="stylesheet">
+	<link rel="preconnect" crossorigin href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700&display=swap">
 	<!-- bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 	<!-- animate.css -->
-	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="preload" href="css/animate.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/animate.min.css"></noscript>
 	<!-- slider and carousel -->
-	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/slick.css">
+	<link rel="preload" href="css/owlcarousel/owl.carousel.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css"></noscript>
+	<link rel="preload" href="css/owlcarousel/owl.theme.default.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css"></noscript>
+	<link rel="preload" href="css/slick.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/slick.css"></noscript>
 	<!-- popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="preload" href="css/magnific-popup.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/magnific-popup.css"></noscript>
 	<!-- icons set -->
-	<link rel="stylesheet" href="css/fontello.css">
-	<!-- custom main stylesheet -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="preload" href="css/fontello.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/fontello.css"></noscript>
 	<!-- in your header -->
+	<link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
 
-	<link rel="stylesheet" href="css/styles.css">
+
+	<link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>
 	<script>//paste this code under the head tag or in a separate js file.
 	// Wait for window load
 	$(window).load(function() {
@@ -50,7 +61,8 @@
 	});
         </script>
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"></noscript>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 	<script>
 		window.addEventListener("load", function () {
@@ -74,7 +86,7 @@
 			})
 		});
 	</script>
-	<script>
+	<script >
 		// Check that service workers are registered
 		if ('serviceWorker' in navigator) {
 			// Use the window load event to keep the page load performant
@@ -147,7 +159,7 @@
 
 	</div>
 
-	<a href="javascript:" id="top"><img src="images/icons/up-chevron.svg"></a>
+	<a href="javascript:" id="top"><img data-src="images/icons/up-chevron.svg" class="lazy" src="images/placeholder.jpg"></a>
 
 	<!--	Logo and menu
 ****************************-->
@@ -280,7 +292,7 @@
 	c0.983-0.984,2.28-1.526,3.651-1.526c1.371,0,2.667,0.542,3.625,1.5l8.33,8.742c0.425,0.446,1.079,0.585,1.644,0.357
 	c0.57-0.229,0.942-0.782,0.941-1.396L40.716,19.406z" />
 				</svg>
-				<img src="images/icons/mouse-click.svg" id="mouse-icon" alt="click-icon-laptop">
+				<img id="mouse-icon" alt="click-icon-laptop" src="images/icons/mouse-click.svg">
 			</div>
 
 
@@ -393,7 +405,7 @@
 							<h4 class="item__hover__header-small">Hjemmeside for houseofheroes.dk</h4>
 
 							<a href="images/photos/web/houseofheroesmockup.png" rel="nofollow" class="item__hover__zoom" title="Houseofheroes">
-								<img src="images/photos/web/houseofheroesmockup.png" alt="Houseofheroes Mockup">
+								<img class="lazy" data-src="images/photos/web/houseofheroesmockup.png" src="images/placeholder.jpg"  alt="Houseofheroes Mockup">
 								+&nbsp;Zoom
 							</a>
 						</div>
@@ -408,7 +420,7 @@
 							<h4 class="item__hover__header-small">Hjemmeside for asiento.dk</h4>
 
 							<a href="images/photos/web/asientomockup.png" rel="nofollow" class="item__hover__zoom" title="Asiento">
-								<img src="images/photos/web/asientomockup.png" alt="Asiento Mockup">
+								<img class="lazy" data-src="images/photos/web/asientomockup.png" src="images/placeholder.jpg" alt="Asiento Mockup">
 								+&nbsp;Zoom
 							</a>
 
@@ -424,7 +436,7 @@
 							<h4 class="item__hover__header-small">Mockups til Progressive Web Appen Aurena version 2.0</h4>
 
 							<a href="images/photos/design/Collage-Aurena-Pwa.png" rel="nofollow" class="item__hover__zoom" title="Aurena PWA">
-								<img src="images/photos/design/Collage-Aurena-Pwa.png" alt="Aurena PWA Mockups">
+								<img  class="lazy" data-src="images/photos/design/Collage-Aurena-Pwa.png" src="images/placeholder.jpg" alt="Aurena PWA Mockups">
 								+&nbsp;Zoom
 							</a>
 
@@ -440,7 +452,7 @@
 							<h4 class="item__hover__header-small">Mockups af app design til "Rigtige Mænd - Sjakket"</h4>
 
 							<a href="images/photos/design/sjakket-collage.png" rel="nofollow" class="item__hover__zoom" title="Rigtige Mænd">
-								<img src="images/photos/design/sjakket-collage.png" alt="Rigtige Maend Sjakket Mockups">
+								<img class="lazy" data-src="images/photos/design/sjakket-collage.png" src="images/placeholder.jpg" alt="Rigtige Maend Sjakket Mockups">
 								+&nbsp;Zoom
 							</a>
 
@@ -456,7 +468,7 @@
 							<h4 class="item__hover__header-small">Gammelt CV inspireret af Material Design</h4>
 
 							<a href="images/photos/fritid/CV.png" rel="nofollow" class="item__hover__zoom" title="CV">
-								<img src="images/photos/fritid/CV.png" alt="CV - Material Design">
+								<img class="lazy" data-src="images/photos/design/sjakket-collage.png" src="images/placeholder.jpg" alt="CV - Material Design">
 								+&nbsp;Zoom
 							</a>
 
@@ -473,7 +485,7 @@
 							<h4 class="item__hover__header-small">Infographic over mine evner som frontendudvikler</h4>
 
 							<a href="images/photos/fritid/infographic.png" rel="nofollow" class="item__hover__zoom" title="Infographic">
-								<img src="images/photos/fritid/infographic.png" alt="Infographic - mine evner">
+								<img class="lazy" data-src="images/photos/fritid/infographic.png" src="images/placeholder.jpg" alt="Infographic - mine evner">
 								+&nbsp;Zoom
 							</a>
 
@@ -484,7 +496,7 @@
 				<!-- button load more	 -->
 				<button class="gallery__button">
 					<div class="preloader" hidden>
-						<img class="preloader__inside" src="images/icons/preloader.gif" alt="preloader">
+						<img class="preloader__inside lazy" data-src="images/icons/preloader.gif" src="images/placeholder.jpg" alt="preloader">
 					</div>
 					<span class="button-text">Indlæs flere</span>
 				</button>
@@ -664,19 +676,17 @@
 	*********************************-->
 		<section class="clients-logos container">
 			<div class="clients-logos__wrapper">
-				<a href="http://www.asiento.dk" target="_blank"><img class="clients-logos__image" src="images/photos/asiento-black.png"
+				<a href="http://www.asiento.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/asiento-black.png" src="images/placeholder.jpg"
 					 alt="Asiento"></a>
-				<a href="http://www.brasidan.org" target="_blank"><img class="clients-logos__image" src="images/photos/brasidan-logo-black.png"
+				<a href="http://www.brasidan.org" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/brasidan-logo-black.png" src="images/placeholder.jpg"
 					 alt="Brasidan"></a>
-				<a href="http://www.krudtdillen.dk" target="_blank"><img class="clients-logos__image" src="images/photos/logo-banner-black-white.png"
+				<a href="http://www.krudtdillen.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/logo-banner-black-white.png" src="images/placeholder.jpg"
 					 alt="Krudtdillen"></a>
 
-				<a href="http://www.raadtilskatten.dk" target="_blank"><img class="clients-logos__image" src="images/photos/logo-raadtilskatten.png"
-					 alt="Raadtilskatten"></a>
-				<a href="http://www.spotfinder.dk" target="_blank"><img class="clients-logos__image" src="images/photos/spotfinder-black.png"
+				<a href="http://www.raadtilskatten.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/logo-raadtilskatten.png" src="images/placeholder.jpg" alt="Raadtilskatten"></a>
+				<a href="http://www.spotfinder.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/spotfinder-black.png" src="images/placeholder.jpg"
 					 alt="Spotfinder"></a>
-				<a href="http://www.houseofheroes.dk" target="_blank"><img class="clients-logos__image" src="images/photos/houseofheroeslogo.png"
-					 alt="HouseofHeroes"></a>
+				<a href="http://www.houseofheroes.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/houseofheroeslogo.png" src="images/placeholder.jpg"  alt="HouseofHeroes"></a>
 			</div>
 		</section>
 	</section>
@@ -693,24 +703,23 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!--<script src="js/libs/jquery.min.js"></script>-->
 	<!-- carousel -->
-	<script src="js/libs/owl.carousel.min.js"></script>
+	<script src="js/libs/owl.carousel.min.js" defer></script>
 	<!-- slider -->
-	<script src="js/libs/slick.min.js"></script>
+	<script src="js/libs/slick.min.js" defer></script>
 	<!-- manipulation with text -->
-	<script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
-	<script src="js/libs/jquery.textillate.js"></script>
+	<script src="js/libs/jquery.lettering-0.6.1.min.js" defer></script>
+	<script src="js/libs/jquery.textillate.js" defer></script>
 	<!-- gallery filter -->
 	<script src="js/libs/isotope.pkgd.min.js"></script>
 	<!-- popup -->
-	<script src="js/libs/jquery.magnific-popup.min.js"></script>
+	<script src="js/libs/jquery.magnific-popup.min.js" defer></script>
 	<!-- smooth scroll -->
-	<script src="js/libs/jquery.smooth-scroll.min.js"></script>
+	<script src="js/libs/jquery.smooth-scroll.min.js" defer></script>
 	<!-- menu -->
-	<script src="js/menu.js"></script>
+	<script src="js/menu.js" defer></script>
 	<!-- castom js script -->
-	<script src="js/main.js"></script>
+	<script src="js/main.js" defer></script>
 	<!-- vimeo player api -->
 
 	<!-- load more function -->
@@ -827,102 +836,6 @@
 		});
 	</script>
 
-	<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-         <script type="text/javascript">
-      google.charts.load('current', {'packages':['line', 'corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-
-      var button = document.getElementById('change-chart');
-      var chartDiv = document.getElementById('chart_div');
-
-      var data = new google.visualization.DataTable();
-      data.addColumn('date', 'Month');
-      data.addColumn('number', "Average Temperature");
-      data.addColumn('number', "Average Hours of Daylight");
-
-      data.addRows([
-        [new Date(2014, 0),  -.5,  5.7],
-        [new Date(2014, 1),   .4,  8.7],
-        [new Date(2014, 2),   .5,   12],
-        [new Date(2014, 3),  2.9, 15.3],
-        [new Date(2014, 4),  6.3, 18.6],
-        [new Date(2014, 5),    9, 20.9],
-        [new Date(2014, 6), 10.6, 19.8],
-        [new Date(2014, 7), 10.3, 16.6],
-        [new Date(2014, 8),  7.4, 13.3],
-        [new Date(2014, 9),  4.4,  9.9],
-        [new Date(2014, 10), 1.1,  6.6],
-        [new Date(2014, 11), -.2,  4.5]
-      ]);
-
-      var materialOptions = {
-        chart: {
-          title: 'Average Temperatures and Daylight in Iceland Throughout the Year'
-        },
-        width: 900,
-        height: 500,
-        series: {
-          // Gives each series an axis name that matches the Y-axis below.
-          0: {axis: 'Temps'},
-          1: {axis: 'Daylight'}
-        },
-        axes: {
-          // Adds labels to each axis; they don't have to match the axis names.
-          y: {
-            Temps: {label: 'Temps (Celsius)'},
-            Daylight: {label: 'Daylight'}
-          }
-        }
-      };
-
-      var classicOptions = {
-        title: 'Average Temperatures and Daylight in Iceland Throughout the Year',
-        width: 900,
-        height: 500,
-        // Gives each series an axis that matches the vAxes number below.
-        series: {
-          0: {targetAxisIndex: 0},
-          1: {targetAxisIndex: 1}
-        },
-        vAxes: {
-          // Adds titles to each axis.
-          0: {title: 'Temps (Celsius)'},
-          1: {title: 'Daylight'}
-        },
-        hAxis: {
-          ticks: [new Date(2014, 0), new Date(2014, 1), new Date(2014, 2), new Date(2014, 3),
-                  new Date(2014, 4),  new Date(2014, 5), new Date(2014, 6), new Date(2014, 7),
-                  new Date(2014, 8), new Date(2014, 9), new Date(2014, 10), new Date(2014, 11)
-                 ]
-        },
-        vAxis: {
-          viewWindow: {
-            max: 30
-          }
-        }
-      };
-
-      function drawMaterialChart() {
-        var materialChart = new google.charts.Line(chartDiv);
-        materialChart.draw(data, materialOptions);
-        button.innerText = 'Change to Classic';
-        button.onclick = drawClassicChart;
-      }
-
-      function drawClassicChart() {
-        var classicChart = new google.visualization.LineChart(chartDiv);
-        classicChart.draw(data, classicOptions);
-        button.innerText = 'Change to Material';
-        button.onclick = drawMaterialChart;
-      }
-
-      drawMaterialChart();
-
-    }
-    </script>
-    -->
 	<script src="js/libs/particles-master/assets/particles.js"></script>
 	<script>
 		particlesJS("particles-js", {
@@ -1056,11 +969,15 @@
 		});
 	</script>
 
+<script src="js/libs/yall.min.js">
+</script>
+<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver" defer></script>
 
+<script>
+	// A $( document ).ready() block.
+	document.addEventListener("DOMContentLoaded", yall);
 
-
-
-
+</script>
 
 </body>
 
