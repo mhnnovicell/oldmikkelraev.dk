@@ -10,6 +10,8 @@
 	<meta property="og:title" content="mikkelraev.dk">
 	<meta property="og:image" content="https://mikkelraev.dk/images/logo/mikkelraev-logo-small.png">
 	<meta property="og:description" content="mikkelraev.dk er en personlig portfolio drevet af Mikkel Hornbech Nielsen">
+	<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+
 	<title>MIKKELRAEV | Portefølje</title>
 	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -52,7 +54,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script>//paste this code under the head tag or in a separate js file.
 	// Wait for window load
 	$(window).load(function() {
@@ -63,7 +65,7 @@
 
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"></noscript>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 	<script>
 		window.addEventListener("load", function () {
 			window.cookieconsent.initialise({
@@ -85,15 +87,6 @@
 				}
 			})
 		});
-	</script>
-	<script >
-		// Check that service workers are registered
-		if ('serviceWorker' in navigator) {
-			// Use the window load event to keep the page load performant
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('/sw.js');
-			});
-		}
 	</script>
 </head>
 
@@ -159,8 +152,12 @@
 
 	</div>
 
-	<a href="javascript:" id="top"><img data-src="images/icons/up-chevron.svg" class="lazy" src="images/placeholder.jpg"></a>
 
+	<a href="javascript:" id="top">
+	<img 
+    data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969822/mikkelraev.dk/icons/up-chevron.svg" 
+	class="cld-responsive lazyload" data-expand="-150" sizes="100vw">
+</a>
 	<!--	Logo and menu
 ****************************-->
 	<header class="header">
@@ -250,7 +247,7 @@
 			<div class="row">
 				<div class="about__text col-xs-12 col-md-6">
 					<h2 class="text__header">Om</h2>
-					<p class="text__par">Mit navn er Mikkel Hornbech Nielsen, jeg er 24 år gammel og født og opvokset i smilets by.
+					<p class="text__par">Mit navn er Mikkel Hornbech Nielsen, jeg er 27 år gammel og født og opvokset i smilets by.
 						Jeg har en kæmpe passion for hjemmesideudvikling og grafisk design. Udover min passion elsker jeg fodbold,
 						familie, venner, gaming og kultur. Jeg har en stor IT-viden, og er aldrig bleg for en udfordring og meget
 						interesseret i alt nyt indenfor mit fag.</p>
@@ -292,7 +289,10 @@
 	c0.983-0.984,2.28-1.526,3.651-1.526c1.371,0,2.667,0.542,3.625,1.5l8.33,8.742c0.425,0.446,1.079,0.585,1.644,0.357
 	c0.57-0.229,0.942-0.782,0.941-1.396L40.716,19.406z" />
 				</svg>
-				<img id="mouse-icon" alt="click-icon-laptop" src="images/icons/mouse-click.svg">
+
+				<img 
+    data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969810/mikkelraev.dk/icons/mouse-click.svg" 
+    class="cld-responsive lazyload" alt="click-icon-laptop" id="mouse-icon" data-expand="-150" sizes="100vw"> 
 			</div>
 
 
@@ -404,8 +404,9 @@
 							<h3 class="item__hover__header"><a href="javascript:void">Houseofheroes</a></h3>
 							<h4 class="item__hover__header-small">Hjemmeside for houseofheroes.dk</h4>
 
-							<a href="images/photos/web/houseofheroesmockup.png" rel="nofollow" class="item__hover__zoom" title="Houseofheroes">
-								<img class="lazy" data-src="images/photos/web/houseofheroesmockup.png" src="images/placeholder.jpg"  alt="Houseofheroes Mockup">
+							<a href="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969827/mikkelraev.dk/photos/web/houseofheroesmockup.png" rel="nofollow" class="item__hover__zoom" title="Houseofheroes">
+								<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969827/mikkelraev.dk/photos/web/houseofheroesmockup.png" 
+    class="cld-responsive lazyload" alt="Houseofheroes Mockup" data-expand="-150" sizes="100vw">
 								+&nbsp;Zoom
 							</a>
 						</div>
@@ -419,8 +420,9 @@
 							<h3 class="item__hover__header"><a href="javascript:void">Asiento</a></h3>
 							<h4 class="item__hover__header-small">Hjemmeside for asiento.dk</h4>
 
-							<a href="images/photos/web/asientomockup.png" rel="nofollow" class="item__hover__zoom" title="Asiento">
-								<img class="lazy" data-src="images/photos/web/asientomockup.png" src="images/placeholder.jpg" alt="Asiento Mockup">
+							<a href="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969827/mikkelraev.dk/photos/web/asientomockup.png" rel="nofollow" class="item__hover__zoom lazyload" data-expand="200" title="Asiento">
+								<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969827/mikkelraev.dk/photos/web/asientomockup.png" 
+								class="cld-responsive lazyload" alt="Asiento mockup" data-expand="-150" sizes="100vw">
 								+&nbsp;Zoom
 							</a>
 
@@ -435,8 +437,9 @@
 							<h3 class="item__hover__header"><a href="javascript:void">Aurena PWA</a></h3>
 							<h4 class="item__hover__header-small">Mockups til Progressive Web Appen Aurena version 2.0</h4>
 
-							<a href="images/photos/design/Collage-Aurena-Pwa.png" rel="nofollow" class="item__hover__zoom" title="Aurena PWA">
-								<img  class="lazy" data-src="images/photos/design/Collage-Aurena-Pwa.png" src="images/placeholder.jpg" alt="Aurena PWA Mockups">
+							<a href="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969812/mikkelraev.dk/photos/design/Collage-Aurena-Pwa.png" rel="nofollow" class="item__hover__zoom lazyload" data-expand="200" title="Aurena PWA">
+								<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969812/mikkelraev.dk/photos/design/Collage-Aurena-Pwa.png" 
+								class="cld-responsive lazyload" alt="Aurena PWA Mockups" data-expand="-150" sizes="100vw">
 								+&nbsp;Zoom
 							</a>
 
@@ -451,8 +454,9 @@
 							<h3 class="item__hover__header"><a href="javascript:void">Rigtige Mænd - Sjakket</a></h3>
 							<h4 class="item__hover__header-small">Mockups af app design til "Rigtige Mænd - Sjakket"</h4>
 
-							<a href="images/photos/design/sjakket-collage.png" rel="nofollow" class="item__hover__zoom" title="Rigtige Mænd">
-								<img class="lazy" data-src="images/photos/design/sjakket-collage.png" src="images/placeholder.jpg" alt="Rigtige Maend Sjakket Mockups">
+							<a href="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969819/mikkelraev.dk/photos/design/sjakket-collage.png" rel="nofollow" class="item__hover__zoom lazyload" data-expand="200" title="Rigtige Mænd">
+								<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969819/mikkelraev.dk/photos/design/sjakket-collage.png" 
+								class="cld-responsive lazyload" alt="Rigtige Maend Sjakket Mockups" data-expand="-150" sizes="100vw">
 								+&nbsp;Zoom
 							</a>
 
@@ -467,8 +471,9 @@
 							<h3 class="item__hover__header"><a href="javascript:void">CV</a></h3>
 							<h4 class="item__hover__header-small">Gammelt CV inspireret af Material Design</h4>
 
-							<a href="images/photos/fritid/CV.png" rel="nofollow" class="item__hover__zoom" title="CV">
-								<img class="lazy" data-src="images/photos/design/sjakket-collage.png" src="images/placeholder.jpg" alt="CV - Material Design">
+							<a href="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969821/mikkelraev.dk/photos/fritid/CV.png" rel="nofollow" class="item__hover__zoom lazyload" data-expand="200" title="CV">
+								<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969821/mikkelraev.dk/photos/fritid/CV.png" 
+								class="cld-responsive lazyload" alt="CV - Material Design" data-expand="-150" sizes="100vw">
 								+&nbsp;Zoom
 							</a>
 
@@ -484,8 +489,9 @@
 							<h3 class="item__hover__header"><a href="javascript:void">Infographic</a></h3>
 							<h4 class="item__hover__header-small">Infographic over mine evner som frontendudvikler</h4>
 
-							<a href="images/photos/fritid/infographic.png" rel="nofollow" class="item__hover__zoom" title="Infographic">
-								<img class="lazy" data-src="images/photos/fritid/infographic.png" src="images/placeholder.jpg" alt="Infographic - mine evner">
+							<a href="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969821/mikkelraev.dk/photos/fritid/infographic.png" rel="nofollow" class="item__hover__zoom lazyload" data-expand="200" title="Infographic">
+								<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969821/mikkelraev.dk/photos/fritid/infographic.png" 
+								class="cld-responsive lazyload" alt="Infographic - mine evner" data-expand="-150" sizes="100vw">
 								+&nbsp;Zoom
 							</a>
 
@@ -496,7 +502,8 @@
 				<!-- button load more	 -->
 				<button class="gallery__button">
 					<div class="preloader" hidden>
-						<img class="preloader__inside lazy" data-src="images/icons/preloader.gif" src="images/placeholder.jpg" alt="preloader">
+						<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969816/mikkelraev.dk/icons/preloader.gif" 
+						class="cld-responsive lazyload" alt="preloader" data-expand="-150" sizes="100vw">
 					</div>
 					<span class="button-text">Indlæs flere</span>
 				</button>
@@ -641,8 +648,8 @@
 					</p>
 
 					<address class="contact__address">
-						Christian X's Vej 76, 1. 22<br>
-						Viby J, Danmark
+						Møllehatten 1, 2, 1<br>
+						Risskov, Danmark
 						<br>
 						<br>
 						<a class="contact__tel" href="tel:+4541430542">+45 4143 0542</a>
@@ -661,13 +668,13 @@
 
 						</div>
 						<div class="social__link-and-icon">
-							<i class="fa fa-behance icon space" aria-hidden="true"></i><a target="_blank" class="social__link" href="https://www.behance.net/mhn2012">Behance<span
+							<i class="fa fa-github icon space" aria-hidden="true"></i><a target="_blank" class="social__link" href="https://github.com/mhnnovicell">Github<span
 								 class="social__link_underline"></span></a>
 
 						</div>
 					</div>
 
-					<p class="copyright">© 2017 mikkelraev.dk</p>
+					<p class="copyright">© 2020 mikkelraev.dk</p>
 				</div>
 			</div>
 		</footer>
@@ -676,17 +683,31 @@
 	*********************************-->
 		<section class="clients-logos container">
 			<div class="clients-logos__wrapper">
-				<a href="http://www.asiento.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/asiento-black.png" src="images/placeholder.jpg"
-					 alt="Asiento"></a>
-				<a href="http://www.brasidan.org" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/brasidan-logo-black.png" src="images/placeholder.jpg"
-					 alt="Brasidan"></a>
-				<a href="http://www.krudtdillen.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/logo-banner-black-white.png" src="images/placeholder.jpg"
-					 alt="Krudtdillen"></a>
+				<a href="https://www.asiento.dk" target="_blank">
+					 <img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969804/mikkelraev.dk/photos/asiento-black.png					 " 
+					 class="cld-responsive lazyload" alt="Asiento" data-expand="-150" sizes="100vw">
+					</a>
+				<a href="https://www.brasidan.org" target="_blank">
+					 <img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969804/mikkelraev.dk/photos/brasidan-logo-black.png					 " 
+					 class="cld-responsive lazyload clients-logos__image" alt="Brasidan" data-expand="-150" sizes="100vw">
+					</a>
+				<a href="https://www.krudtdillen.dk" target="_blank">
+					 <img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969804/mikkelraev.dk/photos/logo-banner-black-white.png					 " 
+					 class="cld-responsive lazyload clients-logos__image" alt="Krudtdillen" data-expand="-150" sizes="100vw">
+					</a>
 
-				<a href="http://www.raadtilskatten.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/logo-raadtilskatten.png" src="images/placeholder.jpg" alt="Raadtilskatten"></a>
-				<a href="http://www.spotfinder.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/spotfinder-black.png" src="images/placeholder.jpg"
-					 alt="Spotfinder"></a>
-				<a href="http://www.houseofheroes.dk" target="_blank"><img class="clients-logos__image lazy" data-src="images/photos/houseofheroeslogo.png" src="images/placeholder.jpg"  alt="HouseofHeroes"></a>
+				<a href="https://www.raadtilskatten.dk" target="_blank">
+					<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969804/mikkelraev.dk/photos/logo-raadtilskatten.png					 " 
+					class="cld-responsive lazyload clients-logos__image" alt="Raadtilskatten" data-expand="-150" sizes="100vw">
+				</a>
+				<a href="https://www.spotfinder.dk" target="_blank">
+					 <img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969804/mikkelraev.dk/photos/spotfinder-black.png					 " 
+					 class="cld-responsive lazyload clients-logos__image" alt="Spotfinder" data-expand="-150" sizes="100vw">
+					</a>
+				<a href="https://www.houseofheroes.dk" target="_blank">
+					<img data-src="https://res.cloudinary.com/mikkelraev/image/upload/w_auto,f_auto,c_scale/v1596969804/mikkelraev.dk/photos/houseofheroeslogo.png					 " 
+					class="cld-responsive lazyload clients-logos__image" alt="HouseofHeroes" data-expand="-150" sizes="100vw">
+				</a>
 			</div>
 		</section>
 	</section>
@@ -694,7 +715,7 @@
 
 
 	<!-- google map -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYhHbI6v_VpjiLZC0R4j5lHkTzMhuhys&callback=initMap">
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYhHbI6v_VpjiLZC0R4j5lHkTzMhuhys&callback=initMap">
 	</script>
 	<!-- castomisation if the map -->
 	<script src="js/map.js"></script>
@@ -704,22 +725,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- carousel -->
-	<script src="js/libs/owl.carousel.min.js" defer></script>
+	<script  src="js/libs/owl.carousel.min.js" ></script>
 	<!-- slider -->
-	<script src="js/libs/slick.min.js" defer></script>
+	<script  src="js/libs/slick.min.js" ></script>
 	<!-- manipulation with text -->
-	<script src="js/libs/jquery.lettering-0.6.1.min.js" defer></script>
-	<script src="js/libs/jquery.textillate.js" defer></script>
+	<script src="js/libs/jquery.lettering-0.6.1.min.js" ></script>
+	<script src="js/libs/jquery.textillate.js" ></script>
 	<!-- gallery filter -->
 	<script src="js/libs/isotope.pkgd.min.js"></script>
 	<!-- popup -->
-	<script src="js/libs/jquery.magnific-popup.min.js" defer></script>
+	<script  src="js/libs/jquery.magnific-popup.min.js" ></script>
 	<!-- smooth scroll -->
-	<script src="js/libs/jquery.smooth-scroll.min.js" defer></script>
+	<script  src="js/libs/jquery.smooth-scroll.min.js" ></script>
 	<!-- menu -->
-	<script src="js/menu.js" defer></script>
+	<script  src="js/menu.js" ></script>
 	<!-- castom js script -->
-	<script src="js/main.js" defer></script>
+	<script src="js/main.js" ></script>
 	<!-- vimeo player api -->
 
 	<!-- load more function -->
@@ -969,14 +990,15 @@
 		});
 	</script>
 
-<script src="js/libs/yall.min.js">
+<script defer src="js/libs/lazysizes.min.js">
 </script>
-<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver" defer></script>
 
-<script>
-	// A $( document ).ready() block.
-	document.addEventListener("DOMContentLoaded", yall);
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.1/cloudinary-core-shrinkwrap.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+    var cl = cloudinary.Cloudinary.new({cloud_name: "mikkelraev"}); 
+    // replace 'demo' with your cloud name in the line above 
+    cl.responsive();
 </script>
 
 </body>
